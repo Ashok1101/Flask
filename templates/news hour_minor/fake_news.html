@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fake_news.css')}}">
+    <title>Fake News Detection</title>
+</head>
+<body>
+  <header id="header">
+        <ul class="menu">
+            <div class="login"><center>FAKE NEWS DETECTION </center></div><hr>
+            <li class="nav"><a href="/home"> HOME </a></li>|
+            <li class="nav"><a href="/blog"> NEWS </a></li>|
+            <li class="nav"><a href="/contact"> CONTACT</a></li>
+        </ul>
+ </header>
+ <main>
+ <div class="container"><p>Hello {{user}}</p><br><br>
+    <form method="post" action="/predict" novalidate>
+        <center>TITLE: <input type="text" name="TxtTitle" id="TxtTitle" class="" value = "{{title}}" required ><br><br>
+        AUTHOR: <input type="text" name="TxtAuthor" id="TxtAuthor" class="" value = "{{author}}"><br><br>
+        CONTENT: <textarea rows=1 cols=30 name="TxtContent" id="TxtContent" class="" >{{content}} </textarea><br><br><br>
+        <p>{{result}}</p><hr><br>
+        <button>DETECT</button>
+        <input type="reset" value="RESET"></center><br><br><br><br><br><br>
+    </form>
+ </div>
+ </main>
+ <footer class="footer">
+    <center>FAKE NEWS&copy; JAGO JANTA JAGO - 2022|Copyright<sup>&#174;</sup></center>
+ </footer>
+ </body>
+ </html>

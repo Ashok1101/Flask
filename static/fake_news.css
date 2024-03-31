@@ -1,0 +1,81 @@
+body{
+    color: black;
+}
+center{
+    font-family: cursive , sans-serif;
+    font-weight: 700;
+}
+#header{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+.menu{
+    padding-left: 0px;
+    text-align: center;
+}
+.menu li{
+    /* position: relative; */
+    text-decoration: none;
+    /* word-spacing: 50px; */
+    display: inline-block;
+    display: inline-flex;
+    color: darkgrey;
+    /* left: 110px; */
+    /* bottom: 75px; */
+}
+button{
+    width: 100px;
+    height: 2.5em;
+    /* position: absolute; */
+    /*left: 510px;*/
+    /* top: 16px;  */
+    /* background-color: black; */
+    border: 2px solid darkgrey;
+    color: grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:active{
+    cursor: progress;
+}
+a{ 
+    text-decoration: none;
+    color: grey;
+    padding: 2vw;
+}
+a:hover {
+    color: cornflowerblue;
+    border-bottom: 2px solid gray;
+    outline-color: aqua;
+}
+a:active{
+    color: aliceblue;
+}
+.footer{
+    /* position: fixed; */
+    /* display: block; */
+    color: white;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    padding-bottom: 4px;
+}
+input[type="text"]{
+    width: 200px;
+}
+.login{
+    display: inline-block;
+}
+input[type="reset"]{
+    width: 100px;
+    height: 2.5em;
+    /*left: 510px;*/
+    /* top: 16px;  */
+    /* background-color: black; */
+    border: 2px solid darkgrey;
+    color: grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
